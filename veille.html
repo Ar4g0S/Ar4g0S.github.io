@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <title>Veille Technologique</title>
-    <meta name="description" content="Ceci est ma page de veille technologique">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css" type="text/css">
-</head>
-
 <body>
     <!-- Header with Navigation Bar -->
     <header>
@@ -23,35 +13,42 @@
         </nav>
     </header>
 
-    <!-- Main Content for Veille Technologique -->
-    <div class="section">
-        <div class="boxed">
-            <!-- Title for Veille Technologique -->
-            <h2>Veille Technologique</h2>
-            <h3>Les dernières tendances en technologie et innovation de l'IA </h3>
+    <!-- Page Container with Sidebars -->
+    <div class="page-container">
+        <!-- Left Sidebar -->
+        <div class="sidebar"></div>
+        
+        <!-- Main Content Section -->
+        <div class="content">
+            <div class="section">
+                <div class="boxed">
+                    <!-- Title for Veille Technologique -->
+                    <h2>Veille Technologique</h2>
+                    <h3>Les dernières tendances en technologie et innovation de l'IA </h3>
 
-            <!-- Introduction to Veille Technologique -->
-            <div class="intro">
-                <p>Dans cette section, je vous partage des informations sur les dernières tendances, innovations et découvertes technologiques. Voici quelques sujets que j'ai explorés récemment :</p>
-            </div>
+                    <!-- Introduction to Veille Technologique -->
+                    <div class="intro">
+                        <p>Dans cette section, je vous partage des informations sur les dernières tendances, innovations et découvertes technologiques. Voici quelques sujets que j'ai explorés récemment :</p>
+                    </div>
 
-            <!-- Section Veille Technologique with Image and Text -->
-            <div class="section-veille">
-                <!-- Image à gauche -->
-                <img src="img/DeepSeek.png" class="boxed-img" alt="DeepSeek Image">
-
-                <!-- Texte à droite -->
-                <ul>
-                    <li class="boxed2">
-                        L'apparition de DeepSeek R1 a eu pour effet de provoquer une chute majeure des valeurs technologiques américaines - moins de 3 % - le 27 janvier 2025.
-                        DeepSeek a été fondé en 2023 par Liang Wenfeng, à Hangzhou, une ville du sud-est de la Chine. Quadragénaire, Lian Wenfeng a obtenu un diplôme en ingénierie de l'information et électronique, à l'université de Zhejiang.
-                        A la différence de la plupart des entrepreneurs de la Silicon Valley, Wenfeng dispose d'une expertise dans le domaine de la finance. Il dirige le fonds spéculatif High-Flyer, qui utilise l'IA pour optimiser le trading de données financières. En 2019, High-Flyer a levé plus de 100 milliards de yuans (soit environ 13 milliards d'euros).
-                        DeepSeek a été fondée en décembre 2023 et le développement du chatbot a démarré dans la foulée. 
-                        Wenfeng aurait constitué un stock important de puces Nvidia A100 - lesquelles ont été interdites d'exportation vers la Chine à partir de septembre 2022. Ce stock, estimé à quelques 50 000 unités aurait été mis à contribution pour créer DeepSeek. Or, il ne s'agit pas du dernier modèle de Nvidia - les sociétés californiennes ont accès à des puces plus puissantes comme la Blackwell B200. La prouesse réalisée par DeepSeek n'en a été que plus impressionnante.
-                    </li>
-                </ul>
+                    <div class="section-veille">
+                        <div class="boxed-img veille">
+                            <!-- Image à gauche -->
+                            <img src="img/DeepSeek.png" alt="DeepSeek Image">
+                        </div>
+                        <!-- Texte à droite -->
+                        <ul>
+                            <li class="boxed2">
+                                L'apparition de DeepSeek R1 a eu pour effet de provoquer une chute majeure des valeurs technologiques américaines - moins de 3 % - le 27 janvier 2025...
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
+        
+        <!-- Right Sidebar -->
+        <div class="sidebar"></div>
     </div>
 
     <!-- Footer Section -->
@@ -59,4 +56,3 @@
         <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
     </footer>
 </body>
-</html>
