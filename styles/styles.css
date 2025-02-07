@@ -1,37 +1,126 @@
-/* Style général */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
 }
 
-/* Section pour la veille technologique */
-.section-veille {
+.slider {
+    width: 100%;
+    min-height: 80vh;
+    aspect-ratio: 16/9;
+    background: black;
+    position: relative;
+}
+
+.slider-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.slider-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1 {
+    color: aliceblue;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: blue;
+    font-size: 0.45rem;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.5em;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.boxed {
+    max-width: 1280px;
+    margin-inline: auto;
+}
+
+.flex {
     display: flex;
-    align-items: flex-start;
-    gap: 20px; /* Espace entre l'image et le texte */
-    padding: 20px 0;
 }
 
-/* Style pour l'image dans la section veille */
-.boxed-img {
-    width: 300px; /* Taille de l'image */
-    height: auto;
+.dark {
+    background: #000;
+    color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w25 {
+    width: 25%;
+}
+
+.gap20 {
+    gap: 20px;
+}
+
+.w32 {
+    width: 32%;
+}
+
+.w40 {
+    width: 40%;
+}
+
+.w60 {
+    width: 60%;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.skill {
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.skill img {
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 1/1;
     object-fit: contain;
 }
 
-/* Style pour le texte aligné à droite de l'image */
-.boxed2 {
-    flex: 1;
-    text-align: left; /* Aligne le texte à gauche */
-    line-height: 1.5em; /* Espacement entre les lignes pour améliorer la lisibilité */
-    font-size: 1rem;
+.css {
+    width: 250px;
 }
 
-/* Styles du header */
+.skill h3 {
+    color: #000;
+    margin-top: 10px;
+}
+
 header {
     background-color: #333;
     padding: 10px 0;
@@ -48,8 +137,14 @@ header {
 
 .nav-links {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
 }
 
 .nav-links a {
@@ -64,30 +159,36 @@ header {
     border-radius: 5px;
 }
 
-/* Section */
-.section {
-    padding: 100px 0;
+.scroll {
+    overflow: hidden;
 }
 
-/* Conteneur centralisé */
-.boxed {
+/* Section pour la veille technologique */
+.section-veille {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Conteneur principal de la veille */
+.boxed-veille {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     max-width: 1280px;
     margin-inline: auto;
 }
 
-/* Responsiveness */
-@media (max-width: 768px) {
-    .section-veille {
-        flex-direction: column;
-        align-items: center;
-    }
+/* Image dans la section veille */
+.boxed-img {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+    margin-right: 20px;
+}
 
-    .boxed-img {
-        width: 100%; /* Image prend toute la largeur sur petits écrans */
-        margin-bottom: 20px;
-    }
-
-    .boxed2 {
-        text-align: center;
-    }
+/* Texte aligné à droite de l'image */
+.boxed2 {
+    flex: 1;
+    text-align: left; /* Aligne le texte à gauche */
 }
