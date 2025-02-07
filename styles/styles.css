@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Reset des marges et paddings */
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 
 .slider {
@@ -121,6 +122,7 @@ p {
     margin-top: 10px;
 }
 
+/* Styles du header */
 header {
     background-color: #333;
     padding: 10px 0;
@@ -167,28 +169,40 @@ header {
 .section-veille {
     display: flex;
     align-items: flex-start;
-    gap: 20px;
-}
-
-/* Conteneur principal de la veille */
-.boxed-veille {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 1280px;
-    margin-inline: auto;
+    gap: 20px; /* Espace entre l'image et le texte */
+    padding: 20px 0;
 }
 
 /* Image dans la section veille */
 .boxed-img {
-    width: 300px;
+    width: 300px; /* Taille de l'image */
     height: auto;
     object-fit: contain;
-    margin-right: 20px;
+    margin-right: 20px; /* Espace entre l'image et le texte */
 }
 
 /* Texte aligné à droite de l'image */
 .boxed2 {
     flex: 1;
     text-align: left; /* Aligne le texte à gauche */
+    line-height: 1.5em; /* Améliore la lisibilité */
+    font-size: 1rem; /* Taille du texte */
 }
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .section-veille {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxed-img {
+        width: 100%; /* L'image prend toute la largeur sur petits écrans */
+        margin-bottom: 20px;
+    }
+
+    .boxed2 {
+        text-align: center;
+    }
+}
+
