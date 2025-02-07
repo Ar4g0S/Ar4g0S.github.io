@@ -142,10 +142,29 @@ header {
 .scroll{
     overflow: hidden;
 }
-.boxed2{
-    text-align: left;
-    max-width: 750px;
+.section-veille {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
 }
-boxed-image2{
-    
+
+.boxed-veille {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.boxed-img veille {
+    width: 300px; /* Taille de l'image, ajuste selon ton besoin */
+    height: auto;
+    object-fit: contain;
+    margin-right: 20px; /* Espace entre l'image et le texte */
+}
+
+.boxed2 {
+    flex: 1;
+}
+
+.boxed2 {
+    text-align: right;
 }
