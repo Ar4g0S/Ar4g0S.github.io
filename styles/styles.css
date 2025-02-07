@@ -8,7 +8,6 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f0f0f0; /* Ajoute un fond gris clair à tout le corps */
 }
 
 .slider {
@@ -44,11 +43,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-h3 {
-    color: black;
-    font-weight: bold;
-}
-
 h4 {
     color: blue;
     font-size: 0.45rem;
@@ -66,9 +60,6 @@ p {
 .boxed {
     max-width: 1280px;
     margin-inline: auto;
-    background-color: #ffffff; /* Fond blanc pour la section centrale */
-    padding: 30px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Légère ombre pour donner du relief */
 }
 
 .flex {
@@ -178,24 +169,24 @@ header {
 .section-veille {
     display: flex;
     align-items: flex-start;
-    gap: 20px;
+    gap: 20px; /* Espace entre l'image et le texte */
     padding: 20px 0;
 }
 
 /* Image dans la section veille */
 .boxed-img {
-    width: 300px;
+    width: 300px; /* Taille de l'image */
     height: auto;
     object-fit: contain;
-    margin-right: 20px;
+    margin-right: 20px; /* Espace entre l'image et le texte */
 }
 
 /* Texte aligné à droite de l'image */
 .boxed2 {
     flex: 1;
-    text-align: left;
-    line-height: 1.5em;
-    font-size: 1rem;
+    text-align: left; /* Aligne le texte à gauche */
+    line-height: 1.5em; /* Améliore la lisibilité */
+    font-size: 1rem; /* Taille du texte */
 }
 
 /* Responsiveness */
@@ -206,7 +197,7 @@ header {
     }
 
     .boxed-img {
-        width: 100%;
+        width: 100%; /* L'image prend toute la largeur sur petits écrans */
         margin-bottom: 20px;
     }
 
@@ -215,33 +206,3 @@ header {
     }
 }
 
-/* Ajout des bandes latérales */
-.page-container {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    background-color: #f0f0f0;
-    padding: 20px 0;
-}
-
-.sidebar {
-    background-color: #333;
-    width: 10%;
-    min-height: 100vh;
-}
-
-.content {
-    width: 80%;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 30px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
