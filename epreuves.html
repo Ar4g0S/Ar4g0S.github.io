@@ -5,11 +5,112 @@
     <title>Mon Portfolio</title>
     <meta name="description" content="Ceci est mon Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+
+    <!-- Google Fonts pour une typographie moderne -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+<!-- Faire un style par page cela rend mieux -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #1f2937;
+            padding: 1rem 0;
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .section {
+            padding: 3rem 1.5rem;
+        }
+
+        .dark {
+            background-color: #e5e7eb;
+        }
+
+        .boxed {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #1f2937;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h3 {
+            color: #374151;
+            margin-top: 1.5rem;
+        }
+
+        .objective ul {
+            padding-left: 1.2rem;
+        }
+
+        .download-box {
+            background-color: #f0f4f8;
+            border-left: 4px solid #3b82f6;
+            padding: 1rem 1.5rem;
+            margin-top: 1rem;
+            border-radius: 8px;
+        }
+
+        .download-box a {
+            display: inline-block;
+            margin-top: 0.5rem;
+            background-color: #3b82f6;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .download-box a:hover {
+            background-color: #2563eb;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #1f2937;
+            color: #fff;
+            margin-top: 3rem;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Header with Navigation Bar -->
+    <!-- Navigation -->
     <header>
         <nav class="navbar">
             <ul class="nav-links">
@@ -18,60 +119,90 @@
                 <li><a href="epreuves.html">Epreuves</a></li>
                 <li><a href="veille.html">Veille Technologique</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="confidentialite.html">Politique de Confidentialité</a></li>
+                <li><a href="confidentialite.html">Confidentialité</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main Section for EPREUVE E4 -->
+    <!-- Section EPREUVE E5 -->
     <div class="section dark">
         <div class="boxed">
-            <!-- Title of EPREUVE E4 -->
             <h2>EPREUVE E5</h2>
             <h3>SUPPORT ET MISE À DISPOSITION DE SERVICES INFORMATIQUES</h3>
 
-            <!-- Objective of EPREUVE E4 -->
             <div class="objective">
                 <h3>1 – OBJECTIF :</h3>
-                <p class="w60">Cette épreuve vise à évaluer chez la personne candidate l’acquisition des compétences décrites dans le bloc de compétences « Support et mise à disposition de services informatiques », à savoir :</p>
-    
+                <p>Cette épreuve vise à évaluer l’acquisition des compétences suivantes :</p>
                 <ul>
                     <li>Gérer le patrimoine informatique</li>
-                    <li>Répondre aux incidents et demandes d’assistance et d’évolution</li>
+                    <li>Répondre aux incidents et demandes</li>
                     <li>Développer la présence en ligne de l’organisation</li>
                     <li>Travailler en mode projet</li>
                     <li>Mettre à disposition des utilisateurs un service informatique</li>
                     <li>Organiser son développement professionnel</li>
                 </ul>
             </div>
-        </div>
-    </div>
 
-    <!-- Main Section for EPREUVE E5 -->
-    <div class="section ">
-        <div class="boxed">
-            <!-- Title of EPREUVE E5 -->
-            <h2>EPREUVE E6</h2>
-            <h3>CONCEPTION ET MISE EN ŒUVRE D'UNE SOLUTION LOGICIELLE</h3>
-
-            <!-- Objective of EPREUVE E5 -->
-            <div class="objective">
-                <h3>1 – OBJECTIF :</h3>
-                <p class="w60">Cette épreuve a pour objectif d’évaluer les compétences nécessaires pour la conception, le développement, et la mise en œuvre d’une solution logicielle en réponse aux besoins d’un utilisateur ou d’une organisation.</p>
-    
-                <ul>
-                    <li>Analyser les besoins des utilisateurs et rédiger un cahier des charges</li>
-                    <li>Concevoir une architecture logicielle adaptée aux besoins</li>
-                    <li>Développer les fonctionnalités en respectant les bonnes pratiques de codage</li>
-                    <li>Effectuer les tests unitaires et l’intégration de la solution logicielle</li>
-                    <li>Mettre en œuvre un déploiement et une gestion du projet</li>
-                    <li>Assurer la maintenance et l’évolution de la solution logicielle</li>
-                </ul>
+            <!-- Bloc de téléchargement PPE -->
+            <div class="download-box">
+                <strong>PPE N°1 : Gestionnaire d’employés</strong>
+                <p>Découvrez le projet complet dans le document ci-dessous :</p>
+                <a href="C:\Users\andre\Downloads\PPE 1.docx" download>Télécharger le document</a>
+            </div>
+            <!-- Bloc de téléchargement PPE -->
+            <div class="download-box">
+                <strong>PPE N°2 : Application de bibliothèque</strong>
+                <p>Découvrez le projet complet dans le document ci-dessous :</p>
+                <a href="" download>Télécharger le document</a>
+            </div>
+            <!-- Bloc de téléchargement PPE -->
+            <div class="download-box">
+                <strong>PPE N°2 : Application de bibliothèque</strong>
+                <p>Découvrez le projet complet dans le document ci-dessous :</p>
+                <a href="" download>Télécharger le document</a>
+            </div>
+            <!-- Bloc de téléchargement PPE -->
+            <div class="download-box">
+                <strong>PPE N°2 : Application de bibliothèque</strong>
+                <p>Découvrez le projet complet dans le document ci-dessous :</p>
+                <a href="" download>Télécharger le document</a>
             </div>
         </div>
     </div>
 
-    <!-- Optional Footer Section -->
+    <!-- Section EPREUVE E6 -->
+    <div class="section">
+        <div class="boxed">
+            <h2>EPREUVE E6</h2>
+            <h3>CONCEPTION ET MISE EN ŒUVRE D'UNE SOLUTION LOGICIELLE</h3>
+
+            <div class="objective">
+                <h3>1 – OBJECTIF :</h3>
+                <p>Évaluer la capacité à concevoir et mettre en œuvre une solution logicielle complète :</p>
+                <ul>
+                    <li>Analyser les besoins et rédiger un cahier des charges</li>
+                    <li>Concevoir une architecture logicielle</li>
+                    <li>Développer en respectant les bonnes pratiques</li>
+                    <li>Effectuer des tests et intégrer la solution</li>
+                    <li>Déployer et maintenir le projet</li>
+                </ul>
+            </div>
+            <div class="download-box">
+                <strong>Projet N°1 : Gestionnaire d’employés</strong>
+                <p>Découvrez le projet complet dans le document ci-dessous :</p>
+                <a href="C:\Users\andre\Downloads\PPE 1.docx" download>Télécharger le document</a>
+                <a href="C:\Users\andre\Downloads\PPE 1.docx" download>Fiche Technique</a>
+            </div>
+            <div class="download-box">
+                <strong>Projet N°2 : Application Bibliothèque</strong>
+                <p>Découvrez le projet complet dans le document ci-dessous :</p>
+                <a href="C:\Users\andre\Downloads\PPE 1.docx" download>Télécharger le document</a>
+                <a href="C:\Users\andre\Downloads\PPE 1.docx" download>Fiche Technique</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
     </footer>

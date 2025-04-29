@@ -1,85 +1,241 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>Mon Portfolio</title>
-        <meta type="description" content="Ceci est mon Portfolio">
-        <link rel="stylesheet" href="styles/styles.css" type="text/css">
-    </head>
+<html lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <title>Mon Portfolio - Andréas Nunez</title>
+    <meta name="description" content="Portfolio de Andréas Nunez, étudiant en BTS SIO SLAM.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts pour une typo plus moderne -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-    <body>
-        <!-- Header with Navigation Bar -->
-        <header>
-            <nav class="navbar">
-                <ul class="nav-links">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="Profil.html">Profil</a></li>
-                    <li><a href="epreuves.html">Epreuves</a></li>
-                    <li><a href="veille.html">Veille Technologique</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="confidentialite.html">Politique de Confidentialité</a></li>
-                </ul>
-            </nav>
-        </header>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9fafb;
+            color: #333;
+        }
 
-        <div class="slider">
-            <img src="img/Fond-top.jpg" class="slider-background">
-            <div class="slider-content">
-                <h1>Andréas Nunez</h1>
-                <p>BTS SIO option SLAM</p>
+        header {
+            background-color: #1f2937;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-links li a:hover {
+            color: #3b82f6;
+        }
+
+        .slider {
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .slider-background {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            filter: brightness(70%);
+        }
+
+        .slider-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        .slider-content h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .slider-content p {
+            font-size: 1.5rem;
+        }
+
+        .section {
+            padding: 4rem 2rem;
+        }
+
+        .dark {
+            background-color: #e5e7eb;
+        }
+
+        .boxed {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h2, h3 {
+            color: #1f2937;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .w40 {
+            flex: 0 0 40%;
+        }
+
+        .w60 {
+            flex: 0 0 60%;
+        }
+
+        .w25 {
+            flex: 0 0 20%;
+            text-align: center;
+        }
+
+        .skill img {
+            width: 60px;
+            height: auto;
+            margin-bottom: 0.5rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .gap20 {
+            gap: 20px;
+        }
+
+        footer {
+            background-color: #1f2937;
+            text-align: center;
+            padding: 1rem;
+            color: white;
+            margin-top: 4rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Header with Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="Profil.html">Profil</a></li>
+                <li><a href="epreuves.html">Épreuves</a></li>
+                <li><a href="veille.html">Veille Technologique</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="confidentialite.html">Confidentialité</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slider Section -->
+    <div class="slider">
+        <img src="img/Fond-top.jpg" class="slider-background" alt="Image d'accueil">
+        <div class="slider-content">
+            <h1>Andréas Nunez</h1>
+            <p>BTS SIO option SLAM</p>
+        </div>
+    </div>
+
+    <!-- A propos de moi -->
+    <div class="section">
+        <div class="boxed flex">
+            <div class="w40">
+                <h2>À propos de moi</h2>
             </div>
-            <div class="section">
-                <div class="boxed">
-                    <div class="flex">
-                        <div class="w40">
-                            <h2>A Propos de moi</h2>
-                        </div>
-                        <div class="w60">
-                            <p>Je m'appelle Andréas Nunez et je suis actuellement étudiant en BTS Services Informatiques aux Organisations (SIO), spécialité Solutions Logicielles et Applications Métier (SLAM).</p>
-                        </div>
-                    </div>
+            <div class="w60">
+                <p>Bonjour et bienvenue sur mon portfolio.<br><br>
+                Je m'appelle <strong>Andréas Nunez</strong>, j'ai 19 ans et je suis originaire de Versailles.<br>
+                Passionné par l'informatique et les jeux vidéo depuis des années, je me suis orienté naturellement vers un baccalauréat Technologique STI2D spécialité SIO.<br><br>
+                Après l'obtention de mon bac avec mention Assez Bien en 2023, j'ai intégré le <strong>Lycée Bascan</strong> pour poursuivre un <strong>BTS SIO option SLAM</strong>.<br><br>
+                Ce parcours m'a permis d'approfondir mes compétences en développement et de travailler sur plusieurs projets collaboratifs.<br><br>
+                Mon ambition est de me spécialiser dans le développement d'applications métiers.<br>
+                N'hésitez pas à parcourir mon site pour découvrir mes projets ou à me contacter !
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compétences -->
+    <div class="section dark">
+        <div class="boxed text-center">
+            <h2>Mes Compétences</h2>
+            <div class="flex gap20">
+                <div class="w25 skill">
+                    <img src="img/Logo2.png" alt="Logo HTML">
+                    <h3>HTML</h3>
                 </div>
-            </div>
-
-            <div class="section dark">
-                <div class="boxed text-center">
-                    <h2>Mes Compétences</h2>
-                    <div class="flex gap20">
-                        <div class="w25 skill">
-                            <img class="skill img" src="img/Logo2.png">
-                            <h3>HTML</h3>
-                        </div>
-                        <div class="w25 skill">
-                            <img class="skill img" src="img/logo-css.png">
-                            <h3>CSS</h3>
-                        </div>
-                        <div class="w25 skill">
-                            <img class="skill img" src="img/Js.png">
-                            <h3>JavaScript</h3>
-                        </div>
-                        <div class="w25 skill">
-                            <img class="skill img" src="img/python.png">
-                            <h3>Python</h3>
-                        </div>
-                        <div class="w25 skill">
-                            <img class="skill img" src="img/Sql.png">
-                            <h3>SQL</h3>
-                        </div>
-                    </div>
+                <div class="w25 skill">
+                    <img src="img/logo-css.png" alt="Logo CSS">
+                    <h3>CSS</h3>
                 </div>
-            </div>
-            <div class="section">
-                <div class="boxed">
-                    <div class="flex">
-                        <div class="w40">
-                            <h2>Mon CV :</h2>
-                        <!-- METTRE CV ICI !!!!-->
-                        </div>
-                    </div>
+                <div class="w25 skill">
+                    <img src="img/Js.png" alt="Logo JavaScript">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="w25 skill">
+                    <img src="img/python.png" alt="Logo Python">
+                    <h3>Python</h3>
+                </div>
+                <div class="w25 skill">
+                    <img src="img/Sql.png" alt="Logo SQL">
+                    <h3>SQL</h3>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
 
+    <!-- Mon CV -->
+    <div class="section">
+        <div class="boxed flex">
+            <div class="w40">
+                <h2>Mon CV</h2>
+            </div>
+            <div class="w60">
+                <!-- Ici, tu peux ajouter un bouton ou une iframe pour afficher ou télécharger ton CV -->
+                <a href="documents/CV_Andreas_Nunez.pdf" target="_blank" style="display: inline-block; margin-top: 1rem; padding: 0.5rem 1rem; background-color: #3b82f6; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Voir mon CV</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Andréas Nunez. Tous droits réservés.</p>
+    </footer>
+
+    <!-- JS -->
     <script src="js/app.js"></script>
+</body>
 </html>

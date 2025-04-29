@@ -1,122 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
+    
 }
-
-body {
+body{
     font-family: 'Montserrat';
 }
 
-.slider {
+.slider{
     width: 100%;
     min-height: 80vh;
     aspect-ratio: 16/9;
     background: black;
     position: relative;
 }
-
-.slider-background {
+.slider-background{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(50%);
+    filter:brightness(50%);
 }
-
-.slider-content {
+.slider-content{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
     text-align: center;
 }
-
-h1 {
+h1{
     color: aliceblue;
     font-size: 3rem;
 }
-
-h2 {
+h2{
     font-size: 3rem;
     margin-bottom: 20px;
 }
-
-h4 {
+h4{
     color: blue;
     font-size: 0.45rem;
 }
-
-p {
+p{
     font-size: 1.5rem;
     line-height: 1.5em;
 }
-
-.section {
-    padding: 100px 0;
+.section{
+    padding:  100px 0;
 }
-
-.boxed {
+.boxed{
     max-width: 1280px;
     margin-inline: auto;
+    
 }
-
-.flex {
+.flex{
     display: flex;
 }
-
-.dark {
+.dark{
     background: #000;
     color: #fff;
 }
-
-.text-center {
+.text-center{
     text-align: center;
 }
-
-.w25 {
+.w25{
     width: 25%;
 }
-
-.gap20 {
-    gap: 20px;
+.gap20{
+    gap:20px;
 }
-
-.w32 {
+.w32{
     width: 32%;
 }
-
-.w40 {
+.w40{
     width: 40%;
 }
-
-.w60 {
+.w60{
     width: 60%;
 }
-
-.space-between {
+.space-between{
     justify-content: space-between;
 }
-
-.skill {
+.skill{
     background: rgb(255, 255, 255);
     border-radius: 15px;
     padding: 20px;
     box-sizing: border-box;
 }
-
 .skill img {
     width: 100px;
     height: 100px;
     aspect-ratio: 1/1;
     object-fit: contain;
 }
-
 .css {
     width: 250px;
 }
-
-.skill h3 {
+.skill h3{
     color: #000;
     margin-top: 10px;
 }
@@ -159,36 +139,6 @@ header {
     border-radius: 5px;
 }
 
-.scroll {
+.scroll{
     overflow: hidden;
-}
-
-/* Section pour la veille technologique */
-.section-veille {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-/* Conteneur principal de la veille */
-.boxed-veille {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 1280px;
-    margin-inline: auto;
-}
-
-/* Image dans la section veille */
-.boxed-img {
-    width: 300px;
-    height: auto;
-    object-fit: contain;
-    margin-right: 20px;
-}
-
-/* Texte aligné à droite de l'image */
-.boxed2 {
-    flex: 1;
-    text-align: left; /* Aligne le texte à gauche */
 }

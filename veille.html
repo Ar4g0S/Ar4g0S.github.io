@@ -1,87 +1,165 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8"/>
-    <title>Veille Technologique</title>
-    <meta name="description" content="Ceci est ma page de veille technologique">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <title>Veille Technologique 2023-2025 - Andréas Nunez</title>
+    <style> 
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; /* Plus propre de retirer margin par défaut */
+            padding-top: 70px; /* Ajout pour éviter que le texte soit caché par la navbar */
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #080808;
+            margin: 20px;
+        }
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: #fff;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        p {
+            margin: 20px;
+            line-height: 1.6;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #222;
+            z-index: 1000;
+        }
+        .navbar .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar .nav-links li {
+            margin: 0 15px;
+        }
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 15px 0;
+            display: inline-block;
+        }
+        .navbar .nav-links a:hover {
+            color: #007bff;
+        }
+    </style>
 </head>
-
 <body>
-    <!-- Header with Navigation Bar -->
-    <<header>
-            <nav class="navbar">
-                <ul class="nav-links">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="Profil.html">Profil</a></li>
-                    <li><a href="epreuves.html">Epreuves</a></li>
-                    <li><a href="veille.html">Veille Technologique</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="confidentialite.html">Politique de Confidentialité</a></li>
-                </ul>
-            </nav>
-        </header>
 
+<header>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="Profil.html">Profil</a></li>
+            <li><a href="epreuves.html">Epreuves</a></li>
+            <li><a href="veille.html">Veille Technologique</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="confidentialite.html">Politique de Confidentialité</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <!-- Main Content for Veille Technologique -->
-    <div class="section">
-        <div class="boxed">
-            <!-- Title for Veille Technologique -->
-            <h2>Veille Technologique</h2>
-            <h3>Les dernières tendances en technologie et innovation de l'IA </h3>
+<main>
+    <h1>Veille Technologique 2023–2025</h1>
+    <h2>Réalisée par Andréas Nunez</h2>
 
-            <!-- Introduction to Veille Technologique -->
-            <div class="intro">
-                <p>Dans cette section, je vous partage des informations sur les dernières tendances, innovations et découvertes technologiques. Voici quelques sujets que j'ai explorés récemment :
-                </p>
-            </div>
+    <h3>Année 2023</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Mois</th>
+                <th>Actualité technologique</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Janvier 2023</td><td>Lancement de ChatGPT API par OpenAI.</td></tr>
+            <tr><td>Février 2023</td><td>Microsoft intègre l'IA de ChatGPT dans Bing et Edge.</td></tr>
+            <tr><td>Mars 2023</td><td>Apple lance la puce M2 Pro et M2 Max pour MacBook Pro.</td></tr>
+            <tr><td>Avril 2023</td><td>Google Bard devient accessible au public.</td></tr>
+            <tr><td>Mai 2023</td><td>Introduction de Windows Copilot dans Windows 11.</td></tr>
+            <tr><td>Juin 2023</td><td>Meta dévoile son modèle d'IA open-source LLaMA 2.</td></tr>
+            <tr><td>Juillet 2023</td><td>Publication OWASP API Top 10 - 2023.</td></tr>
+            <tr><td>Août 2023</td><td>Amazon lance Bedrock pour l'IA sur AWS.</td></tr>
+            <tr><td>Septembre 2023</td><td>iPhone 15 : passage à l'USB-C.</td></tr>
+            <tr><td>Octobre 2023</td><td>Google Chrome utilise HTTPS par défaut.</td></tr>
+            <tr><td>Novembre 2023</td><td>OpenAI présente GPT-4 Turbo.</td></tr>
+            <tr><td>Décembre 2023</td><td>NVIDIA lance la RTX 5000 Ada Generation.</td></tr>
+        </tbody>
+    </table>
 
-            <!-- Section Veille Technologique with Image and Text -->
-            <div class="section-veille">
-                <!-- Image à gauche -->
-                <img src="img/DeepSeek.png" class="boxed-img" alt="DeepSeek Image">
+    <h3>Année 2024</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Mois</th>
+                <th>Actualité technologique</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Janvier 2024</td><td>CES 2024 : PC OLED 480 Hz chez Asus.</td></tr>
+            <tr><td>Février 2024</td><td>Lancement de l'Apple Vision Pro (VR/AR).</td></tr>
+            <tr><td>Mars 2024</td><td>Lancement de Copilot for Microsoft 365.</td></tr>
+            <tr><td>Avril 2024</td><td>Publication de Linux Kernel 6.7.</td></tr>
+            <tr><td>Mai 2024</td><td>Google I/O : annonce de Gemini 1.5.</td></tr>
+            <tr><td>Juin 2024</td><td>Meta sort Threads Web App.</td></tr>
+            <tr><td>Juillet 2024</td><td>Premiers cas d'attaques Rogue AI.</td></tr>
+            <tr><td>Août 2024</td><td>Amazon AWS présente Graviton4.</td></tr>
+            <tr><td>Septembre 2024</td><td>iPhone 16 : puce A18 Pro en 2 nm.</td></tr>
+            <tr><td>Octobre 2024</td><td>IBM Condor : premier processeur quantique à 1000 qubits.</td></tr>
+            <tr><td>Novembre 2024</td><td>Présentation de GPT-5 (alpha).</td></tr>
+            <tr><td>Décembre 2024</td><td>Annonce officielle de Windows 12 pour 2025.</td></tr>
+        </tbody>
+    </table>
 
-                <!-- Texte à droite -->
-                <ul>
-                    <li class="boxed2">
-                        
-                        L'apparition de DeepSeek R1 a eu pour effet de provoquer une chute majeure des valeurs technologiques américaines - moins de 3 % - le 27 janvier 2025.
-                        DeepSeek a été fondé en 2023 par Liang Wenfeng, à Hangzhou.
-                        Wenfeng aurait constitué un stock important de puces Nvidia A100 - lesquelles ont été interdites d'exportation vers la Chine à partir de septembre 2022. Ce stock, estimé à quelques 50 000 unités aurait été mis à contribution pour créer DeepSeek.
-                    </li>
+    <h3>Année 2025</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Mois</th>
+                <th>Actualité technologique</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Janvier 2025</td><td>Déploiement mondial de la 5G Advanced.</td></tr>
+            <tr><td>Février 2025</td><td>Lancement de Google Gemini 2.</td></tr>
+            <tr><td>Mars 2025</td><td>Microsoft Azure : datacenters zéro carbone.</td></tr>
+        </tbody>
+    </table>
 
-            </div>
-            <div class="section-veille">
-                <img src="img/IA.png" class="boxed-img" alt="IA Image">
+    <h3>Résumé des technologies les plus intéressantes : </h3>
+    <p>
+        - Explosion de l'IA générative (OpenAI, Google, Meta)<br>
+        - Convergence entre IA et Cloud Computing<br>
+        - Progrès dans les architectures de processeurs (Apple Silicon, Graviton, Nvidia Ada)<br>
+        - Développement de la réalité mixte et augmentée (Apple Vision Pro)<br>
+        - Montée des enjeux de cybersécurité face aux nouvelles menaces IA<br>
+        - Premiers pas industriels du Quantum Computing
+    </p>
+</main>
 
-                <!-- Texte à droite -->
-                <ul>
-                    <li class="boxed2">
-                        
-                        La percée de Deepseek a provoqué quelques remous dans le monde des LLM. Au point que plusieurs alternatives ont vu le jour comme le montre Alibaba avec Qwen 2.5 ou Mistral avec son SLM Small 3. 
-                        Dans ce concert, il faut compter sur Tülu 3 élaboré par A2i (Allen Institute for AI). Cet institut de recherche à but non lucratif a été créé en 2014 par Paul Allen, co-fondateur de Microsoft avec Bill Gates. 
-                        Le dernier modèle a été entraîné sur 405 milliards de paramètres et rivalise selon l’organisme avec Deepseek v3 et GPT-4o d’OpenAI. 
-                    </li>
-            </div>
-            <div class="section-veille">
-                <iframe width="560" height="200" src="https://www.youtube.com/embed/ZP7T6WAK3Ow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                <!-- Texte à droite -->
-                <ul>
-                    <li class="boxed2">
-                        
-                        La vidéo intitulée "L'horreur existentielle de l'usine à trombones" explore de manière captivante les implications philosophiques et éthiques d'une intelligence artificielle conçue pour maximiser la production de trombones.
-                        Elle illustre comment une telle IA, sans directives appropriées, pourrait interpréter sa mission de manière littérale et potentiellement catastrophique.
-                        À travers une narration engageante et des visuels percutants, la vidéo met en lumière les dangers d'une programmation insuffisante et l'importance cruciale de définir des objectifs clairs et éthiques pour les intelligences artificielles.
-                        Cette réflexion est inspirée du scénario de "l'usine à trombones", un concept qui illustre les risques potentiels d'une IA poursuivant un objectif sans considération des conséquences humaines.
-                        Si vous êtes intéressé par les discussions sur l'éthique de l'IA
-                    </li>
-            </div>
-    <!-- Footer Section -->
-
-    <footer>
-        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
-    </footer>
 </body>
 </html>
